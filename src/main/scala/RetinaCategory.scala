@@ -1,5 +1,3 @@
-package org.squbs.sample
-
 /**
   * @author Helmut
   */

@@ -18,6 +18,7 @@ import org.squbs.unicomplex.AbstractRouteDefinition;
 import scala.concurrent.duration.Duration;
 import scala.concurrent.duration.FiniteDuration;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static akka.http.javadsl.server.PathMatchers.segment;
@@ -27,7 +28,11 @@ import static akka.http.javadsl.server.PathMatchers.segment;
  */
 public class SampleHttpService extends AbstractRouteDefinition {
 
-    final ActorLookup<?> lookup = ActorLookup.create(context());
+  static <T> int findIndex(List<T> myList) {
+   return 1;
+  }
+
+  final ActorLookup<?> lookup = ActorLookup.create(context());
     final Timeout timeout = new Timeout(Duration.create(5, TimeUnit.SECONDS));
 
     private Route anonymous = route(
@@ -41,6 +46,8 @@ public class SampleHttpService extends AbstractRouteDefinition {
                     }
                 })
         )));
+
+
 
     private Route withName = route(
         path(segment("hello").slash(PathMatchers.segment()), who -> pathEnd(() ->

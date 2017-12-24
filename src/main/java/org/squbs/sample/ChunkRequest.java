@@ -9,17 +9,17 @@ public class ChunkRequest {
 
     public final String who;
     public final FiniteDuration delay;
-    public final String toWhom;
+
 
   /**
    *
    * @param who
    * @param delay
-   * @param toWhom
+   *
    */
-    public ChunkRequest(String who, FiniteDuration delay, String toWhom) {
+    public ChunkRequest(String who, FiniteDuration delay) {
         this.who = who;
         this.delay = delay;
-        this.toWhom = toWhom;
+
     }
 }
