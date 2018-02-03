@@ -9,4 +9,8 @@ import akka.actor.AbstractActor;
  */
 public class RetinaImageActor extends AbstractActor {
 
+  public RetinaImageActor() {
+
+  }
+
 }
