@@ -1,5 +1,7 @@
 import de.johoop.jacoco4sbt._
 
+import scala.collection.JavaConverters._
+
 name := "squbs-java-seed"
 
 version := "0.1.0-SNAPSHOT"
@@ -53,7 +55,24 @@ libraryDependencies ++= Seq(
   "org.squbs" %% "squbs-testkit" % squbsV % "test",
   "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpV % "test",
   "junit" % "junit" % "4.12" % "test",
-  "com.novocode" % "junit-interface" % "0.11" % "test->default"
+  "com.novocode" % "junit-interface" % "0.11" % "test->default",
+  "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "net.databinder.dispatch" %% "dispatch-core" % "0.13.3",
+
+  "com.github.finagle" %% "finch-core" % "0.17.0",
+  "com.github.finagle" %% "finch-generic" % "0.17.0",
+  "com.github.finagle" %% "finch-argonaut" % "0.17.0",
+  "com.github.finagle" %% "finch-jackson" % "0.17.0",
+  "com.github.finagle" %% "finch-json4s" % "0.17.0",
+  "com.github.finagle" %% "finch-circe" % "0.17.0",
+  "com.github.finagle" %% "finch-playjson" % "0.17.0",
+  "com.github.finagle" %% "finch-sprayjson" % "0.17.0",
+  "com.github.finagle" %% "finch-test" % "0.17.0",
+  "com.github.finagle" %% "finch-sse" % "0.17.0",
+
+  // https://mvnrepository.com/artifact/org.apache.spark/spark-mllib
+  "org.apache.spark" %% "spark-mllib" % "1.3.0"
+
 )
 
 mainClass in (Compile, run) := Some("org.squbs.unicomplex.Bootstrap")
@@ -69,6 +88,7 @@ xerial.sbt.Pack.packSettings
 
 packMain := Map("run" -> "org.squbs.unicomplex.Bootstrap")
 
+//enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
 
 dockerfile in docker := {
