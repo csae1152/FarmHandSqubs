@@ -18,5 +18,6 @@ Getting Started
 
 8. `docker run -p 8080:8080 <IMAGE NAME>` to run as a docker container.
 
-Most important - have fun!
---------------------------
+How to integrate retina prediction engine?
+
+1. Create a new actor.
