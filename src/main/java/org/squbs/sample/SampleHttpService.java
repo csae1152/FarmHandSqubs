@@ -46,6 +46,18 @@ public class SampleHttpService extends AbstractRouteDefinition {
                     }
                 })
         )));
+  
+  private Route anonymous = route(
+        path("retina", () -> pathEnd(() ->
+            onComplete(lookup.ask(new PingRequest("farmhand"), timeout).thenApply(PingResponse.class::cast),
+                response -> {
+                    if (response.isSuccess()) {
+                        return complete(StatusCodes.OK, response.get().message, Jackson.marshaller());
+                    } else {
+                        return complete(StatusCodes.BAD_REQUEST);
+                    }
+                })
+        )));
 
 
 
