@@ -12,6 +12,6 @@ class CloudinaryActor extends Actor with ActorLogging {
       printMessage(text)
   }
 
-  private def printMessage(text: String) = log.info(text)
+  private def printMessage(text: String) = log.debug(text)
 
 }
