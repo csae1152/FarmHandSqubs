@@ -31,6 +31,8 @@ public class SampleHttpService extends AbstractRouteDefinition {
   static <T> int findIndex(List<T> myList) {
    return 1;
   }
+  
+  final int startPosition = 1;
 
   final ActorLookup<?> lookup = ActorLookup.create(context());
     final Timeout timeout = new Timeout(Duration.create(5, TimeUnit.SECONDS));
