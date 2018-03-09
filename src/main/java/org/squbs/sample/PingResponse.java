@@ -6,6 +6,7 @@ package org.squbs.sample;
 public class PingResponse {
 
     public final String message;
+    private int startIndex = 1;
 
     public PingResponse(String message) {
         this.message = message;
