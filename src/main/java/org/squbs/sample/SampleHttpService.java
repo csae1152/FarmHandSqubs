@@ -64,7 +64,7 @@ public class SampleHttpService extends AbstractRouteDefinition {
 
 
     private Route withName = route(
-        path(segment("hello").slash(PathMatchers.segment()), who -> pathEnd(() ->
+        path(segment("farmhand").slash(PathMatchers.segment()), who -> pathEnd(() ->
             onComplete(lookup.ask(new PingRequest(who), timeout).thenApply(PingResponse.class::cast),
                 response -> {
                     if (response.isSuccess()) {
