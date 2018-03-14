@@ -38,7 +38,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   private final FiniteDuration pollingInterval;
   private final Outlet<ByteString> out = Outlet.create("FileTailSource.out");
   private final SourceShape<ByteString> shape = SourceShape.of(out);
-
+  
   // this is stateless, so can be shared among instances
   private static final CompletionHandler<Integer, AsyncCallback<Try<Integer>>> completionHandler = new CompletionHandler<Integer, AsyncCallback<Try<Integer>>>() {
     @Override
@@ -75,9 +75,12 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
       private final AsynchronousFileChannel channel = AsynchronousFileChannel.open(path, StandardOpenOption.READ);
 
       private long position = startingPosition;
+      
+      if(startingPosition<1) {
+        chunkCallback = 0;
+      }
       private AsyncCallback<Try<Integer>> chunkCallback;
-
-      {
+    
         setHandler(out, new AbstractOutHandler() {
           @Override
           public void onPull() throws Exception {
