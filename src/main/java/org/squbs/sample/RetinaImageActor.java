@@ -7,7 +7,7 @@ import akka.actor.AbstractActor;
  *
  * <p>Getting images from Cloudinary.</p>
  */
-public class RetinaImageActor extends AbstractActor {
+public class RetinaImageActor extends AbstractActor implements CloudinaryActor {
 
   public RetinaImageActor() {
 
