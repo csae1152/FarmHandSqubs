@@ -13,6 +13,6 @@ public class MockSupervisor extends AbstractActor {
 
     public MockSupervisor() {
         context().actorOf(Props.create(SampleDispatcher.class), "sample");
-        receive(ReceiveBuilder.matchAny(r -> {}).build());
+        receive(ReceiveBuilder.matchAny(n -> {}).build());
     }
 }
