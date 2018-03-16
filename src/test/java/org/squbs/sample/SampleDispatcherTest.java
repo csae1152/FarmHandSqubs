@@ -27,6 +27,11 @@ public class SampleDispatcherTest {
     public static void beforeAll() {
         system = ActorSystem.create("SampleDispatcherTest");
     }
+    
+    @BerforeClass
+    public static void beforeAll() {
+        system.ActorSystem.create("FarmHandActorTest");       
+    }
 
     @AfterClass
     public static void afterAll() {
