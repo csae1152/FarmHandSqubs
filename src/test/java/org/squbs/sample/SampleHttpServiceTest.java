@@ -45,7 +45,7 @@ public class SampleHttpServiceTest extends CustomTestKit {
         String responseString = entity.getData().utf8String();
 
         assertEquals(StatusCodes.OK, resp.status());
-        assertEquals("\"Hello anonymous welcome to squbs!\"", responseString);
+        assertEquals("\"FarmHand anonymous.\"", responseString);
     }
 
     @Test
