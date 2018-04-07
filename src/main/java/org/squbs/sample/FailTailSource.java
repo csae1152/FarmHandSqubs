@@ -52,7 +52,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
     }
   };
 
-  public FailTailSource(Path path, int maxChunkSize, long startingPosition, FiniteDuration pollingInterval) {
+  public FailTailSource(Path path, long maxChunkSize, long startingPosition, FiniteDuration pollingInterval) {
     this.path = path;
     this.maxChunkSize = maxChunkSize;
     this.startingPosition = startingPosition;
@@ -149,7 +149,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
    * @param startingPosition Offset into the file to start reading
    * @param pollingInterval When the end has been reached, look for new content with this interval
    */
-  public static Source<ByteString, NotUsed> create(Path path, int maxChunkSize, long startingPosition, FiniteDuration pollingInterval) {
+  public static Source<ByteString, NotUsed> create(Path path, long maxChunkSize, long startingPosition, FiniteDuration pollingInterval) {
     return Source.fromGraph(new FailTailSource(path, maxChunkSize, startingPosition, pollingInterval));
   }
 
