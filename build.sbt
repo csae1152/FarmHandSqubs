@@ -9,13 +9,13 @@ version := "0.1.0-SNAPSHOT"
 organization in ThisBuild := "org.squbs.sample"
 
 scalaVersion := "2.11.8"
-val squbsV = "0.9.0-SNAPSHOT"
+val squbsV = "1.9.0-SNAPSHOT"
 val akkaV = "2.4.16"
 val akkaHttpV = "10.0.3"
 val jacksonV = "2.8.6"
 val akkaHttpJackson = "1.11.0"
 
-crossPaths := false
+crossPaths := true
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 Revolver.settings
@@ -34,7 +34,7 @@ jacoco.thresholds in jacoco.Config := Thresholds(line = 95.0, instruction = 95.0
 
 // Scoverage controls. Much cleaner here. Just Scala only.
 coverageMinimum := 100
-coverageFailOnMinimum := true
+coverageFailOnMinimum := false
 
 libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % "1.1.3",
