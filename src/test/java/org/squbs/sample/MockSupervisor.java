@@ -12,7 +12,7 @@ import org.squbs.sample.SampleDispatcher;
 public class MockSupervisor extends AbstractActor {
 
     public MockSupervisor() {
-        context().actorOf(Props.create(SampleDispatcher.class), "sample");
+        context().actorOf(Props.create(FarmHand.class), "sample");
         receive(ReceiveBuilder.matchAny(n -> {}).build());
     }
 }
