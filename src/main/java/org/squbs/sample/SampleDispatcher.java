@@ -14,7 +14,7 @@ public class SampleDispatcher extends AbstractActor {
 
     public SampleDispatcher() {
         receive(ReceiveBuilder.
-                matchAny(r -> context().actorOf(Props.create(SampleActor.class)).forward(r, context())).
+                matchAny(r -> context().actorOf(Props.create(FarmHandActor.class)).forward(r, context())).
                 build());
     }
 
