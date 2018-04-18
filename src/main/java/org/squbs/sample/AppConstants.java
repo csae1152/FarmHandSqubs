@@ -8,6 +8,6 @@ public class AppConstants {
     public static final String pingActorPath = "/user/squbs-seed/sample";
 
     public static final String emptyRequest = "EmptyRequest";
-    public static final String emptyResponse = "farmhand_zero";
-
+    public static final String emptyResponse = "EmptyResponse";
+    public static final String XmlRequest xmlRequest;
 }
