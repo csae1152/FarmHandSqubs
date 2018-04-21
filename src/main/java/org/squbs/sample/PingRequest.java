@@ -10,7 +10,7 @@ public class PingRequest {
     //default constructor required for Jackson
     public PingRequest() { who = ""; }
 
-    public PingRequest(String who) {
-        this.who = who;
+    public PingRequest(String from) {
+        this.from = from;
     }
 }
