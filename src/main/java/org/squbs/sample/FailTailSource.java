@@ -47,7 +47,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
     }
 
     @Override
-    public void failed(Throwable exc, AsyncCallback<Try<String>> attachment) {
+    public void failed(Throwable exc, AsyncCallback<Try<Integer>> attachment) {
       attachment.invoke(new Failure<>(exc));
     }
   };
@@ -166,7 +166,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
    * @param startingPosition Offset into the file to start reading
    * @param pollingInterval When the end has been reached, look for new content with this interval
    */
-  public static akka.stream.scaladsl.Source<ByteString, NotUsed> apply(Path path, int maxChunkSize, long startingPosition, FiniteDuration pollingInterval) {
+  public static akka.stream.scaladsl.Source<ByteString, Used> apply(Path path, int maxChunkSize, long startingPosition, FiniteDuration pollingInterval) {
     return create(path, maxChunkSize, startingPosition, pollingInterval).asScala();
   }
 
