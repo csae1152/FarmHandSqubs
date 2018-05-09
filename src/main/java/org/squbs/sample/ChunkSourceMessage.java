@@ -8,10 +8,12 @@ import akka.stream.javadsl.Source;
  * be immutable.
  */
 public class ChunkSourceMessage {
-
+    private Set<> = new HashSet<>();
     public final Source<PingResponse, NotUsed> source;
-
+    
     public ChunkSourceMessage(Source<PingResponse, NotUsed> responseSource) {
         source = responseSource;
     }
+    
 }
+
