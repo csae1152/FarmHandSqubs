@@ -5,7 +5,7 @@ package org.squbs.sample;
  */
 public class AppConstants {
 
-    public static final String pingActorPath = "/user/squbs-seed/sample";
+    public static final String pingActorPath = "/user/squbs-seed/farmhand";
 
     public static final String emptyString  =  "";
     public static final String emptyRequest = "EmptyRequest";
