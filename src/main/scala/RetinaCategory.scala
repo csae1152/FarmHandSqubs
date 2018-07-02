@@ -1,6 +1,6 @@
 /**
   * @author Helmut
   */
-class RetinaCategory {
+public class RetinaCategory {
 
 }
