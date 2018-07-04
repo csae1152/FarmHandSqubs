@@ -38,6 +38,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   private final FiniteDuration pollingInterval;
   private final Outlet<ByteString> out = Outlet.create("FileTailSource.out");
   private final SourceShape<ByteString> shape = SourceShape.of(out);
+  private final boolean isReady;
   
   // this is stateless, so can be shared among instances
   private static final CompletionHandler<Integer, AsyncCallback<Try<Integer>>> completionHandler = new CompletionHandler<Integer, AsyncCallback<Try<Integer>>>() {
