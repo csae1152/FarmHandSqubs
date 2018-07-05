@@ -9,6 +9,7 @@ import akka.stream.javadsl.Source;
  */
 public class ChunkSourceMessage {
     private Set<> = new HashSet<>();
+    private Queue<T> = new DelayQueue<T>();
     public final Source<PingResponse, NotUsed> source;
     
     public ChunkSourceMessage(Source<PingResponse, NotUsed> responseSource) {
