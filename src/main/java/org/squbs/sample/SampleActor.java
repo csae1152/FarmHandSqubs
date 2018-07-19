@@ -38,7 +38,7 @@ public class SampleActor extends AbstractActor {
 
                 requester.tell(new ChunkSourceMessage(source), self());
             }).
-            matchAny(r -> context().stop(self())).
+            matchOne(r -> context().stop(self())).
             build());
     }
 
