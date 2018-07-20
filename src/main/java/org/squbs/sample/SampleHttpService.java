@@ -28,7 +28,7 @@ import static akka.http.javadsl.server.PathMatchers.segment;
  */
 public class SampleHttpService extends AbstractRouteDefinition {
 
-  static <T> int findIndex(List<T> myList) {
+  final static <T> int findIndex(List<T> myList) {
    return 1;
   }
   
@@ -39,7 +39,7 @@ public class SampleHttpService extends AbstractRouteDefinition {
 
     private Route anonymous = route(
         path("hello", () -> pathEnd(() ->
-            onComplete(lookup.ask(new PingRequest("anonymous"), timeout).thenApply(PingResponse.class::cast),
+            findAny(lookup.ask(new PingRequest("anonymous"), timeout).thenApply(PingResponse.class::cast),
                 response -> {
                     if (response.isSuccess()) {
                         return complete(StatusCodes.OK, response.get().message, Jackson.marshaller());
