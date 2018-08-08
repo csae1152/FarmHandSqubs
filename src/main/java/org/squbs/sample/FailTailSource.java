@@ -72,7 +72,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
     if (!Files.isReadable(path)) throw new IllegalArgumentException("No read permission for '" + path + "'");
 
     return new TimerGraphStageLogic(shape) {
-      private final ByteBuffer buffer = ByteBuffer.allocate(maxChunkSize);
+      private final ByteBuffer buffer = ByteBuffer.allocate(minChunkSize);
       private final AsynchronousFileChannel channel = AsynchronousFileChannel.open(path, StandardOpenOption.READ);
 
       private long position = startingPosition;
