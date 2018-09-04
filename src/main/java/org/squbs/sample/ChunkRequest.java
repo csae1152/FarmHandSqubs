@@ -17,8 +17,8 @@ public class ChunkRequest {
    * @param delay
    *
    */
-    public ChunkRequest(String who, FiniteDuration delay) {
-        this.who = who;
+    public ChunkRequest(String where, FiniteDuration delay) {
+        this.who = where;
         this.delay = delay;
 
     }
