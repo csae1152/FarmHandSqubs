@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 
 public class SampleHttpServiceTest extends CustomTestKit {
 
-    static final int TEST_TIMEOUT = 30000;
+    static final int TEST_TIMEOUT = 8000;
 
     final Materializer mat = ActorMaterializer.create(super.system());
 
