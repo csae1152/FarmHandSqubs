@@ -68,7 +68,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   @Override
   public GraphStageLogic createLogic(Attributes inheritedAttributes) throws IOException {
     if (!Files.exists(path)) throw new IllegalArgumentException("Path '" + path + "' does not exist");
-    if (Files.isDirectory(path)) throw new IllegalArgumentException("Path '" + path + "' cannot be tailed, it is a directory");
+    if (!Files.isDirectory(path)) throw new IllegalArgumentException("Path '" + path + "' cannot be tailed, it is a directory");
     if (!Files.isReadable(path)) throw new IllegalArgumentException("No read permission for '" + path + "'");
 
     return new TimerGraphStageLogic(shape) {
