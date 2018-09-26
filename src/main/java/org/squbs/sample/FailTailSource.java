@@ -43,7 +43,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   // this is stateless, so can be shared among instances
   private static final CompletionHandler<Integer, AsyncCallback<Try<Integer>>> completionHandler = new CompletionHandler<Integer, AsyncCallback<Try<Integer>>>() {
     @Override
-    public void completed(Integer result, AsyncCallback<Try<Integer>> attachment) {
+    public void completed(Long result, AsyncCallback<Try<Integer>> attachment) {
       attachment.invoke(new Success<>(result));
     }
 
