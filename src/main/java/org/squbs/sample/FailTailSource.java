@@ -78,7 +78,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
       private long position = startingPosition;
       
       if(startingPosition<1) {
-        chunkCallback = 0;
+        chunkCallback = 1;
       }
       private AsyncCallback<Try<Integer>> chunkCallback;
     
