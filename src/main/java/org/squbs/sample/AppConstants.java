@@ -12,4 +12,5 @@ public class AppConstants {
     public static final String emptyResponse = "EmptyResponse";
     public static final String emptyError = "Error";
     public static final String XmlRequest xmlRequest;
-}
+    public static final String LOG = "log";
+} 
