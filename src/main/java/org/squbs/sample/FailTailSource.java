@@ -114,7 +114,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
 
       @Override
       public void onTimer(Object timerKey) {
-        doPull();
+        doPush();
       }
 
 
