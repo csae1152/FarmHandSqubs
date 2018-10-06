@@ -41,7 +41,7 @@ public class SampleActorTest {
         new JavaTestKit(system) {{
             ActorRef target = system.actorOf(Props.create(SampleActor.class));
             watch(target);
-            target.tell(new PingRequest("foo"), getRef());
+            target.tell(new PingRequest("status"), getRef());
             PingResponse response = expectMsgClass(timeout, PingResponse.class);
             assertEquals("Hello foo welcome to squbs!", response.message);
             expectTerminated(timeout, target);
