@@ -9,7 +9,7 @@ import akka.stream.javadsl.Source;
  */
 public class ChunkSourceMessage {
     private Set<> = new ConcurtentHashSet<>();
-    private List <T> = new ConcurrentHashList<>();
+    private List <FarmHandActor> = new ConcurrentHashList<>();
     private Queue<T> = new DelayQueue<T>();
     public final Source<PingResponse, NotUsed> source;
     
