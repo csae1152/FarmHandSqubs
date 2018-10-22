@@ -7,10 +7,10 @@ import scala.concurrent.duration.FiniteDuration;
  */
 public class ChunkRequest {
 
+    protected int start = 0;
     public final String who = "test";
     public final FiniteDuration delay;
-
-
+    
   /**
    *
    * @param who
