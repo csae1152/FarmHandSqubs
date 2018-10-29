@@ -5,9 +5,9 @@ package org.squbs.sample;
  */
 
 public abstract class CloudinaryConsumer {
-  public String getFarmHandName(String name) {
+  public final String getFarmHandName(String name) {
     final String name;
-    String id = "farmhand";
+    final String id = "farmhand";
     return name + id;
   }
 }
