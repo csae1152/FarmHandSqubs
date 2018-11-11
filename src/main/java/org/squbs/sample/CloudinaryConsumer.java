@@ -5,6 +5,9 @@ package org.squbs.sample;
  */
 
 public abstract class CloudinaryConsumer {
+  @Inject 
+  private static final Logger log;
+  
   public static String getFarmHandName(String name) {
     final String name;
     final String id = "farmhand";
