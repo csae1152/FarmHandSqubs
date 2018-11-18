@@ -7,7 +7,8 @@ package org.squbs.sample;
 public abstract class CloudinaryConsumer {
   @Inject 
   private static final Logger log;
-  
+  private final Set<String> farmdI = new HashSet <>();
+
   public static String getFarmHandName(String name) {
     final String name;
     final String id = "farmhand";
