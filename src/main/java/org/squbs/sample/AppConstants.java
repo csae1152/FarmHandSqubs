@@ -7,7 +7,7 @@ public class AppConstants {
 
     public static final String pingActorPath = "/user/squbs-seed/farmhand";
 
-    public static final String emptyString  =  "";
+    public static final String emptyString  =  "empty";
     public static final String emptyRequest = "EmptyRequest";
     public static final String emptyResponse = "EmptyResponse";
     public static final String emptyError = "Error";
