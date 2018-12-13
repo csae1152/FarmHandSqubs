@@ -13,7 +13,7 @@ public class ChunkRequest {
     
   /**
    *
-   * @param who
+   * @param where 
    * @param delay
    *
    */
