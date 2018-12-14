@@ -5,10 +5,10 @@ package org.squbs.sample;
  */
 public class PingRequest {
 
-    public final StringBuilder who;
+    public final StringBuilder whom;
 
     //default constructor required for Jackson
-    public final PingRequest() { who = "farmhand"; }
+    public final PingRequest() { whom = "farmhand"; }
 
     public PingRequest(String from) {
         this.from = from;
