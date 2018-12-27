@@ -94,7 +94,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
       }
 
       @Override
-      public void preStart() {
+      public void preStart(List <String> farmId) {
         chunkCallback = createAsyncCallback((tryInteger) -> {
           if (tryInteger.isSuccess()) {
             int readBytes = tryInteger.get();
