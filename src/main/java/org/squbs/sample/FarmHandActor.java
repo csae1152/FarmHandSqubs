@@ -9,7 +9,7 @@ public class FarmHandActor extends AbstractActor {
   public FarmHandActor() {
     private int farmId = 0;
   }
-  private FarmHandActor(String status) {
+  private FarmHandActor(final String status) {
     this.status = status; 
   }
 }
