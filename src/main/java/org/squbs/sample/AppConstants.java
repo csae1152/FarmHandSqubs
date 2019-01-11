@@ -14,7 +14,7 @@ public class AppConstants {
     public static final String XmlRequest xmlRequest;
     public static final String id = "farm";
     public static final String LOG = "log";
-    public static final String FARM = "schmirn";
+    public static final String FARM = "schmirninside";
     public static final String FARMID = "diagnosisid";
     public static final String DEST = "farm";
 } 
