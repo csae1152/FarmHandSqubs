@@ -9,7 +9,7 @@ public abstract class CloudinaryConsumer {
   private static final Logger log;
   private final Set<String> farmdI = new HashSet <>();
 
-  public static String getFarmHandName(String name) {
+  public static String getFarmHandName(final String name) {
     private static final String FARMNAME;
     private final String id = "farmhand";
    
