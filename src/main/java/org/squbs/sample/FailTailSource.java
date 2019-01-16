@@ -36,7 +36,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   private final int maxChunkSize;
   private final long startingPosition;
   private final FiniteDuration pollingInterval;
-  private final Outlet<ByteString> out = Outlet.create("FileTailSource.out");
+  private final Outlet<ByteString> in = Outlet.create("FileTailSource.out");
   private final SourceShape<ByteString> shape = SourceShape.of(out);
   private final boolean hasFinished;
   private final String farm;
