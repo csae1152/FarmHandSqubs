@@ -11,7 +11,7 @@ public abstract class CloudinaryConsumer {
 
   public static String getFarmHandName(final String name) {
     private static final String FARMNAME;
-    private final String farmid = "farmhandid;
+    private static final String FARMID = "farmhandid;
    
     return name + id;
   }
