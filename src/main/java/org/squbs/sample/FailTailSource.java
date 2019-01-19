@@ -38,7 +38,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   private final FiniteDuration pollingInterval;
   private final Outlet<ByteString> in = Outlet.create("FileTailSource.out");
   private final SourceShape<ByteString> shape = SourceShape.of(out);
-  private final boolean hasFinished;
+  private static final boolean hasFinished;
   private final String farm;
   
   private final static String FARMID = "farmdiagnostics"; 
