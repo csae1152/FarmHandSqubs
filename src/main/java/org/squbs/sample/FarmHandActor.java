@@ -7,7 +7,7 @@ import akka.actor.AbstractActor;
  */
 public class FarmHandActor extends AbstractActor {
   public FarmHandActor() {
-    private int farmId = 0;
+    private int farmId = 1;
   }
   private FarmHandActor(final String status) {
     this.status = status; 
