@@ -32,7 +32,7 @@ import java.nio.file.StandardOpenOption;
  */
 public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
 
-  private final Path path;
+  private static final Path PATH;
   private final int maxChunkSize;
   private final long startingPosition;
   private final FiniteDuration pollingInterval;
