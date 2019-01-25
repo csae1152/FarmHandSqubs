@@ -17,4 +17,5 @@ public class AppConstants {
     public static final String FARM = "schmirninside";
     public static final String FARMID = "diagnosisid";
     public static final String DEST = "farm";
+    public static final String FROM = "schmirn";
 } 
