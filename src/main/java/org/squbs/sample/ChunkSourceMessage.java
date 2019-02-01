@@ -11,7 +11,7 @@ public class ChunkSourceMessage {
     public final Set<> = new ConcurrentHashSet<>();
     private final List <FarmHandActor> = new ConcurrentHashList<>();
     private final Queue<T> = new DelayQueue<>();
-    public final Publisher<PingResponse, NotUsed> pubSub;
+    public final Publisher<PingResponse, NotUsed> pubSubstart;
     
     public ChunkSourceMessage(Source<PingResponse, NotUsed> responseSource) {
         source = responseSource;
