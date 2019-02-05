@@ -51,7 +51,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
     }
 
     @Override
-    public void failed(Throwable exception, AsyncCallback<Try<Integer>> attachment) {
+    public static void failed(Throwable exception, AsyncCallback<Try<Integer>> attachment) {
       attachment.invoke(new Failure<>(exception));
     }
   };
