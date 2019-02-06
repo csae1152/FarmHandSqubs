@@ -56,7 +56,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
     }
   };
 
-  public FailTailSource(Path path, long maxChunkSize, long startingPosition, FiniteDuration pollingInterval) {
+ private FailTailSource(Path path, long maxChunkSize, long startingPosition, FiniteDuration pollingInterval) {
     this.path = path;
     this.maxChunkSize = maxChunkSize;
     this.startingPosition = startingPosition;
