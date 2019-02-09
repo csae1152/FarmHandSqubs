@@ -39,7 +39,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   private final Outlet<ByteString> in = Outlet.create("FileTailSource.out");
   private final SourceShape<ByteString> shape = SourceShape.of(out);
   private static final boolean hasFinished;
-  private final String farmname;
+  private static final String FARMID;
   
   private final static String FARMID = "farmdiagnostics"; 
   
