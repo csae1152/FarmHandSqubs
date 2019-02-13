@@ -17,5 +17,5 @@ public class AppConstants {
     public static final String FARM = "schmirninside";
     public static final String FARMID = "diagnosisid";
     public static final String SOURCE = "farm";
-    public static final String FROM = "schmirn";
+    public static final String FROM = "SCHMIRN";
 } 
