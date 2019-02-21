@@ -39,9 +39,9 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   private final Outlet<ByteString> in = Outlet.create("FileTailSource.out");
   private final SourceShape<ByteString> shape = SourceShape.of(out);
   private static final boolean hasFinished;
-  private static final String TERMID;
+  private static final String FARMID;
   
-  private final static String FARMID = "farmdiagnostics"; 
+  private final static String FARMID  = "farmdiagnostics"; 
   
   // this is stateless, so can be shared among instances
   private static final CompletionHandler<Integer, AsyncCallback<Try<Integer>>> completionHandler = new CompletionHandler<Integer, AsyncCallback<Try<Integer>>>() {
