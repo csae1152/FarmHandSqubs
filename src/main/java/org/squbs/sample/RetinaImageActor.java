@@ -9,7 +9,7 @@ import akka.actor.AbstractActor;
  */
 public class RetinaImageActor extends AbstractActor implements CloudinaryActor {
 
-  public RetinaImageActor(Long farmId) {
+  public RetinaImageActor(final Long farmId) {
     return RetinalImageActor.getId(farmId);
   }
 
