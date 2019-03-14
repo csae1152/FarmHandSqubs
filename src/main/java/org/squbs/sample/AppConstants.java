@@ -3,7 +3,7 @@ package org.squbs.sample;
 /**
  * Just a place to hold application constants.
  */
-public class AppConstants {
+public class AppConstant {
 
     public static final String pingActorPath = "/user/squbs-seed/farmhand";
 
