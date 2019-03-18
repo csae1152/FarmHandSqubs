@@ -13,7 +13,7 @@ public class AppConstant {
     public static final String emptyError = "Error";
     public static final String XmlRequest xmlRequest;
     public static final String id = "farm";
-    public static final String LOG = "log";
+    public static final String LOGGERID = "log";
     public static final String FARM = "schmirninside";
     public static final String FARMID = "diagnosisid";
     public static final String TO = "farm";
