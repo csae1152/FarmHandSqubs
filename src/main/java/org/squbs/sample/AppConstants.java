@@ -17,5 +17,5 @@ public class AppConstant {
     public static final String FARM = "schmirninside";
     public static final String FARMID = "diagnosisid";
     public static final String TO = "farm";
-    public static final String FROM = "SCHMIRN";
+    public static final String FROM = "NUL";
 } 
