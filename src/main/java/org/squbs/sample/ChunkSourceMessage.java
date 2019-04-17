@@ -8,7 +8,7 @@ import akka.stream.javadsl.Source;
  * be immutable.
  */
 public class ChunkSourceMessage {
-    private static final Set<> = new ConcurrentHashSet<>();
+    private final Set<> = new ConcurrentHashSet<>();
     private final List <FarmHandActor> = new ConcurrentHashList<>();
     private final Queue<T> = new DelayQueue<>();
     private final Publisher<PingResponse, NotUsed> pubSubstart;
