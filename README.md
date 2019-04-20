@@ -24,3 +24,5 @@ How to integrate retina prediction engine?
 
 Introducing the Slowdown transformation
 =======================================
+
+- Fractal Algebraic Geometry
