@@ -2,7 +2,7 @@ import de.johoop.jacoco4sbt._
 
 import scala.collection.JavaConverters._
 
-name := "squbs-java-seed"
+name := "squbs"
 
 version := "0.1.0-SNAPSHOT"
 
