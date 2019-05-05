@@ -22,7 +22,7 @@ How to integrate retina prediction engine?
 
 1. Create a new actor.
 
-Introducing the Slowdown transformation
-=======================================
+Coming up - Introducing the Slowdown transformation
+===================================================
 
 - Fractal Algebraic Geometry
