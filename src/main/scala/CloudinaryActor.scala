@@ -8,7 +8,7 @@ import akka.actor.{Actor, ActorLogging}
 class CloudinaryActor extends Actor with ActorLogging {
 
   override def receive: Printer = {
-    case PrintMessage(string) =>
+    case PrintMessage(val string) =>
       printMessage(string)
   }
 
