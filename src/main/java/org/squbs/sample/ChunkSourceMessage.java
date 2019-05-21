@@ -9,7 +9,7 @@ import akka.stream.javadsl.Source;
  */
 public class ChunkSourceMessage {
     public static final Set<> = new ConcurrentHashSet<>();
-    public static final List <FarmHandActor> = new ConcurrentHashList<>();
+    public static final List <FarmHandActorId> = new ConcurrentHashList<>();
     public static final Queue<T> = new DelayQueue<>();
     public static final Publisher<Response, Used> pubSubstart;
     
