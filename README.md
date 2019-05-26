@@ -1,5 +1,5 @@
-Getting Started
----------------
+Getting Started with Squbs
+--------------------------
 
 1. Run `sbt` from root directory to enter the interactive mode.
 
