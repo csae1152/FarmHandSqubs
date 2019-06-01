@@ -14,6 +14,6 @@ Getting Started with Squbs
 
 6. Console URL: http://localhost:8080/adm
 
-7. `sbt docker` to create a docker image.
+7. `docker` to create a docker image.
 
 8. `docker run -p 8080:8000 <NAME>` to run as a docker container.
