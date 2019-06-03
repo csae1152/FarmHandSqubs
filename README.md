@@ -16,4 +16,4 @@ Getting Started with Squbs
 
 7. `docker` to create a docker image.
 
-8. `docker run -p 8080:8000 <NAME>` to run as a docker container.
+8. `docker run -p 8080:8080 <NAME>` to run as a docker container.
