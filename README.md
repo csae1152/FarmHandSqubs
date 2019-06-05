@@ -3,7 +3,7 @@ Getting Started with Squbs
 
 1. Run `sbt` from root directory to enter the interactive mode.
 
-2. Start the server by using `start` or `run`.
+2. Start the server by using `start`.
 
 3. Run jacoco by `jacoco:cover` for Java, but with quirks.
 
