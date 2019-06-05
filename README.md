@@ -5,7 +5,7 @@ Getting Started with Squbs
 
 2. Start the server by using `start` or `run`.
 
-3. Run jacoco by `jacoco:cover` for Java code, but with quirks.
+3. Run jacoco by `jacoco:cover` for Java, but with quirks.
 
 5. URLs:
    * http://localhost:8080/hello: Simple hello response
