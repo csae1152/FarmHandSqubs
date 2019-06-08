@@ -33,7 +33,7 @@ jacoco.reportFormats   in jacoco.Config := Seq(XMLReport(encoding = "utf-8"), HT
 jacoco.thresholds in jacoco.Config := Thresholds(line = 95.0, instruction = 95.0, method = 95.0, clazz = 95.0)
 
 // Scoverage controls. Much cleaner here. Just Scala only.
-coverageMinimum := 100
+coverageMinimum := 1000
 coverageFailOnMinimum := false
 
 libraryDependencies ++= Seq(
