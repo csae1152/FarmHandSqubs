@@ -8,7 +8,7 @@ Getting Started with Squbs
 3. Run jacoco by jacoco:cover for Java, but with quirks.
 
 5. URL
-   * http://localhost:8080/farm: Simple hello response
+   * http://localhost:8080/farm: Simple farm response
    * http://localhost:8080/farm/{get}: Hello response greeting name and return Json response
    * http://localhost:8080/farm/{name}/{delay}: Sends chunked response in intervals with delay in seconds
 
