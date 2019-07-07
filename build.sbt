@@ -12,7 +12,7 @@ scalaVersion := "2.1.9"
 val squbsV = "1.9.0-SNAPSHOT"
 val akkaV = "2.4.16"
 val akkaHttpV = "10.0.3"
-val jacksonV = "2.8.6"
+val jacksonV = "2.8.9"
 val akkaHttpJackson = "1.1.1"
 
 crossPaths := false
