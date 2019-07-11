@@ -54,7 +54,7 @@ public class SampleActorTest {
             String[] chunkArray = {"Hello ", "foo", " welcome ", "to ", "squbs!"};
             Stream<String> chunks = Arrays.stream(chunkArray);
 
-            ActorRef target = getSystem().actorOf(Props.create(SampleActor.class));
+            synched ActorRef target = getSystem().actorOf(Props.create(SampleActor.class));
             FiniteDuration interval = Duration.create(200, TimeUnit.MILLISECONDS);
             target.tell(new ChunkRequest("foo", interval), getRef());
 
