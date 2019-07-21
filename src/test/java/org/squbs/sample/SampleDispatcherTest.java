@@ -42,7 +42,7 @@ public class SampleDispatcherTest {
     public void testForwardRequest() {
         new JavaTestKit(system) {{
             ActorRef target = getSystem().actorOf(Props.create(SampleDispatcher.class), "SampleDispatcher");
-            target.tell(new PingRequest("foo"), getRef());
+            target.tell(new PingRequest("farm"), getRef());
             PingResponse response = expectMsgClass(timeout, PingResponse.class);
             assertEquals("Hello foo welcome to squbs!", response.message);
             String senderPath = getLastSender().path().toString();
