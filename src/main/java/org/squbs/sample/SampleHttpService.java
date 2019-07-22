@@ -50,7 +50,7 @@ public class SampleHttpService extends AbstractRouteDefinition {
         )));
   
   private Route anonymous = route(
-        path("retina", () -> pathEnd(() ->
+        path("farm", () -> pathEnd(() ->
             onComplete(lookup.ask(new PingRequest("farmhand"), timeout).thenApply(PingResponse.class::cast),
                 response -> {
                     if (response.isSuccess()) {
