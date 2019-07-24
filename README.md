@@ -16,4 +16,4 @@ Getting Started with Squbs
 
 7. docker to create an image.
 
-8. docker run -p 8080:8000 <FARM>` to run as a docker image.
+8. docker run -p 8080:8000 <farm>` to run as a docker image.
