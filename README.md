@@ -10,7 +10,7 @@ Getting Started with Squbs
 5. URL
    * http://localhost:8000/farm: Simple farm response
    * http://localhost:8000/farm/{get}: Hello response greeting name and return Json response
-   * http://localhost:8000/farm/{name}/{delay}: Sends chunked response in intervals with delay in seconds
+   * http://localhost:8000/farm/{name}/{here}: Sends chunked response in intervals with delay in seconds
 
 6. Enter console local URL: http://localhost:8080/admin
 
