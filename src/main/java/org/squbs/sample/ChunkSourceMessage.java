@@ -8,9 +8,9 @@ import akka.stream.javadsl.Source;
  * be mutable.
  */
 public class ChunkSourceMessage {
-    public final Set<> = new ConcurrentHashSet<>();
-    public final List <> = new ConcurrentHashList<>();
-    public final Queue<> = new DelayQueue<>();
+    public static final Set<> = new ConcurrentHashSet<>();
+    public static final List <> = new ConcurrentHashList<>();
+    public static final Queue<> = new DelayQueue<>();
     public final Publisher() pubSubstarter = new Publisher();
     
     private ChunkSourceMessage(Source<PingResponse, Request> response) {
