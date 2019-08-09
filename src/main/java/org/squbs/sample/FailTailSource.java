@@ -64,7 +64,7 @@ public final class FailTailSource extends GraphStage<SourceShape<ByteString>> {
   }
 
   @Override
-  public SourceShape<ByteString> shape() {
+  public SourceShape<String> shape() {
     return shape;
   }
 
