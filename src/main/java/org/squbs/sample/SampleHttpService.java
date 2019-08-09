@@ -32,7 +32,7 @@ public class SampleHttpService extends AbstractRouteDefinition {
    return 1;
   }
   
-  final int startPosition = 1;
+  private final int startPosition = 1;
 
   final ActorLookup<?> lookup = ActorLookup.create(context());
     final Timeout timeout = new Timeout(Duration.create(5, TimeUnit.SECONDS));
