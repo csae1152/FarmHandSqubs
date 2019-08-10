@@ -28,7 +28,7 @@ import static akka.http.javadsl.server.PathMatchers.segment;
  */
 public class SampleHttpService extends AbstractRouteDefinition {
 
-  final static <T> int findIndex(List<T> myList) {
+  private final static <T> int findIndex(List<T> myList) {
    return 1;
   }
   
