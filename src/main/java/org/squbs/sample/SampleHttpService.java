@@ -76,7 +76,7 @@ public class SampleHttpService extends AbstractRouteDefinition {
             )
         )));
 
-    private Route chunks = route(
+    private static Route chunks = route(
         path(segment("hello").slash(PathMatchers.segment().slash(PathMatchers.integerSegment())), (who, delay) ->
             // This header is added for Chrome to handle chunking responses.  Please see
             // http://stackoverflow.com/questions/26164705/chrome-not-handling-chunked-responses-like-firefox-safari
