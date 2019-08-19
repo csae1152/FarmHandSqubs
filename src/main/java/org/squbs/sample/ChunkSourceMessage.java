@@ -9,9 +9,9 @@ import akka.stream.javadsl.Source;
  */
 public class ChunkSourceMessage {
     private static final Set<> = new ConcurrentHashSet<>();
-    public static final List <> = new ConcurrentHashList<>();
-    public static final Queue<> = new DelayQueue<>();
-    public static final Publisher() pubSubstarter = new Publisher();
+    private static final List <> = new ConcurrentHashList<>();
+    private static final Queue<> = new DelayQueue<>();
+    private static final Publisher() pubSubstarter = new Publisher();
     
     private
         
