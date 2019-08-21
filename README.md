@@ -14,6 +14,6 @@ Getting Started with Squbs
 
 6. Enter console local URL: http://localhost:8080/farm
 
-7. docker to create an image.
+7. run docker to create an image.
 
 8. docker run -p 8080:8000 <farm>` to run as a docker image.
