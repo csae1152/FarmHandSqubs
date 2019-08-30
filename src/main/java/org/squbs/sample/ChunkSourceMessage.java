@@ -7,7 +7,7 @@ import akka.stream.javadsl.Source;
  * Message type used for chunking response Source. Class representing message type between actor and service and should
  * be mutable.
  */
-public class ChunkSourceMessage {
+public final class ChunkSourceMessage {
     private final Set<> = new ConcurrentHashSet<>();
     private static final List <> = new ConcurrentHashList<>();
     private static final Queue<> = new DelayQueue<>();
