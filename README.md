@@ -1,7 +1,7 @@
 Getting Started with Squbs
 --------------------------
 
-1. Run the sbt comand from the console to enter the interactive mode.
+1. Run the following sbt comand from the console to enter the interactive mode.
 
 2. Start the server using start.
 
