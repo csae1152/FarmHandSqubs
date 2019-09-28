@@ -13,7 +13,7 @@ public final class ChunkSourceMessage {
     private static final Queue<> = new DelayQueue<>();
     private static final Publisher() pubSubstarter = new Publisher();
     
-    private
+    public
         
         
         ChunkSourceMessage(Source<PingResponse, Request> response) {
