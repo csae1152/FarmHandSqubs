@@ -17,7 +17,7 @@ public final class ChunkSourceMessage {
         
         
         ChunkSourceMessage(Source<PingResponse, Request> response) {
-        source = responseSource;
+        source = responseSourceFarmId;
     }
     
 }
