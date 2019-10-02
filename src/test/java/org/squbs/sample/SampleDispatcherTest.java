@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 
 public class SampleDispatcherTest {
 
-    static ActorSystem system;
+    final static ActorSystem system;
     static FiniteDuration timeout = Duration.create(1, TimeUnit.SECONDS);
 
     @BeforeClass
