@@ -5,7 +5,7 @@ Getting Started with Squbs
 
 2. Start the server using start.
 
-3. Run jacoco by jacoco:cover for Java, but with quirks.
+3. Run the jacoco by jacoco:cover for Java, but with quirks.
 
 5. Open the following URL
    * http://localhost:8000/farm: Simple farm response
