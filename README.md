@@ -7,7 +7,7 @@ Getting Started with Squbs
 
 3. Run the jacoco by jacoco:cover for Java, but with quirks.
 
-5. Open the following URL
+5. Open the following URL in your browser
    * http://localhost:8000/farm: Simple farm response
    * http://localhost:8000/farm/{get}: Hello response farm name and return Json response
    * http://localhost:8000/farm/{name}/{there}: Sends chunked response in intervals with delay in seconds
