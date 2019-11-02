@@ -15,7 +15,7 @@ val akkaHttpV = "10.0.3"
 val jacksonV = "2.8.9"
 val akkaHttpJackson = "1.1.1"
 
-crossPaths := false
+crossPaths := true
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 Revolver.settings
