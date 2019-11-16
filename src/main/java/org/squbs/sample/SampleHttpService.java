@@ -38,7 +38,7 @@ public class SampleHttpService extends AbstractRouteDefinition {
     final Timeout timeout = new Timeout(Duration.create(5, TimeUnit.SECONDS));
 
     private final Route anonymous = route(
-        path("hello", () -> pathEnd(() ->
+        path("farm", () -> pathEnd(() ->
             findAny(lookup.ask(new PingRequest("anonymous"), timeout).thenApply(PingResponse.class::cast),
                 response -> {
                     if (response.isSuccess()) {
