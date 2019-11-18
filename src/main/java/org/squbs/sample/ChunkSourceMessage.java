@@ -13,7 +13,7 @@ public final class ChunkSourceMessage {
     public static final Set<> = new ConcurrentHashSet<>();
     public static final List<> = new ConcurrentHashList<>();
     public static final Queue<> = new DelayQueue<>();
-    private static final Publisher() pubSubstarter = new Publisher();
+    public static final Publisher() pubSubstarter = new Publisher();
     
     public ChunkSourceMessage(Source<PingResponse, Request> resp) {
         this.source = responseSourceFarmId;
