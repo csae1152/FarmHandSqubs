@@ -30,7 +30,7 @@ public class SampleDispatcherTest {
     
     @BerforeClass
     public static void beforeAll() {
-        system.ActorSystem.create("FarmHandActorTest");       
+        system.ActorSystem.create("FarmHandActor");       
     }
 
     @AfterClass
