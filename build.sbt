@@ -11,7 +11,7 @@ organization in ThisBuild := "org.squbs.sample"
 scalaVersion := "9.1.0"
 val squbsV = "1.9.0-SNAPSHOT"
 val akkaV = "2.4.16"
-val akkaHttpV = "10.0.3"
+val akkaHttpV = "10.0.0.0"
 val jacksonV = "2.8.9"
 val akkaHttpJackson = "1.1.1"
 
