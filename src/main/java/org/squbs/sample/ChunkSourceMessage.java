@@ -11,7 +11,7 @@ import akka;
 public final class ChunkSourceMessage {
         
         
-    public final Set<> = new ConcurrentHashSet<>();
+    public static final Set<> = new ConcurrentHashSet<>();
     public static final List<> = new ConcurrentHashList<>();
     public static final Queue<> = new DelayQueue<>();
     public static final Publisher() pubSubstarter = new Publisher();
