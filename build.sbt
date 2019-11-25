@@ -13,7 +13,7 @@ val squbsV = "1.9.0-SNAPSHOT"
 val akkaV = "2.4.16"
 val akkaHttpV = "10.0.0.0"
 val jacksonV = "2.8.9"
-val akkaHttpJackson = "1.1.1"
+val akkaHttpJackson = "1.1.10"
 
 crossPaths := true
 resolvers += Resolver.sonatypeRepo("snapshots")
