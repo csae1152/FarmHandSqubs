@@ -1,4 +1,4 @@
-package org.squbs.sample;
+package org.farm.sample;
 
 import akka.NotUsed;
 import akka.stream.javadsl.Source;
