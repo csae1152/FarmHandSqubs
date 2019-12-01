@@ -8,7 +8,7 @@ version := "0.1.0-SNAPSHOT"
 
 organization in ThisBuild := "org.squbs.sample"
 
-scalaVersion := "9.1.0"
+scalaVersion := "1.0.0.0"
 val squbsV = "1.9.0-SNAPSHOT"
 val akkaV = "2.4.16"
 val akkaHttpV = "10.0.0.0"
