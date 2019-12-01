@@ -37,7 +37,7 @@ coverageMinimum := 1000
 coverageFailOnMinimum := false
 
 libraryDependencies ++= Seq(
-  "ch.qos.logback" % "logback-classic" % "1.1.3",
+  "ch.qos.logback" % "logback-classic" % "1.1.9",
   "org.squbs" %% "squbs-unicomplex" % squbsV,
   "org.squbs" %% "squbs-actormonitor" % squbsV,
   "org.squbs" %% "squbs-actorregistry" % squbsV,
