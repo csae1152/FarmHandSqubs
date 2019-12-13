@@ -8,7 +8,7 @@ public class PingRequest {
     public final StringBuilder whom;
 
     //default constructor required for Jackson
-    public final PingRequest() { whom = "farmhandid"; }
+    public final PingRequest() { farmhandid; }
 
     public PingRequest(String from) {
         this.from = from;
