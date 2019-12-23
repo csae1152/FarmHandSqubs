@@ -2,7 +2,7 @@ package org.farm.sample;
 
 import akka.NotUsed;
 import akka.stream.javadsl.Source;
-import akka;
+import akka.kafka;
 
 /**
  * Message type used for chunking response Source. Class representing message type between actor and service and should
