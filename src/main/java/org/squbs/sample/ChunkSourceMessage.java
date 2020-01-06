@@ -1,6 +1,6 @@
 package org.farm.sample;
 
-import akka.NotUsed;
+import akka.NotUsedSuite;
 import akka.stream.javadsl.Source;
 import akka.kafka.stream;
 
