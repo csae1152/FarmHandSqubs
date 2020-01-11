@@ -18,6 +18,6 @@ public static final class ChunkSourceMessage {
     
     public ChunkSourceMessage(Source<Ping
                              ,Request> Response) {
-        this.source = responseSourceFarmId;
+        this.source = responseSourceFarm;
     }    
 }
