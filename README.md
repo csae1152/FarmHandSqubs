@@ -16,4 +16,4 @@ Getting Started with Squbs
 
 7. run docker to create an iso.
 
-8. docker run -p 9000:8000 <farm>` to run as a docker image.
+8. docker run -p 9000:8000 <farmhands>` to run as a docker image.
