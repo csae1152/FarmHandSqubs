@@ -1,7 +1,7 @@
 Getting Started with Squbs
 --------------------------
 
-1. Run the following standalone sbt comand on the console window to enter the interactive mode.
+1. Run the following standalone sbt comand in the console window to enter the interactive mode.
 
 2. Start the glassfish server using the start comand.
 
