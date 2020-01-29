@@ -16,7 +16,7 @@ val jacksonV = "2.8.9"
 val akkaHttpJackson = "1.1.10"
 
 crossPaths := true
-resolvers += Resolver.sonatypeRepo("snapshots")
+resolvers += Resolver.sonatypeRepo("farm")
 
 Revolver.settings
 jacoco.settings
