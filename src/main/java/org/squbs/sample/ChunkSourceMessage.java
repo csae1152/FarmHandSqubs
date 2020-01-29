@@ -8,10 +8,9 @@ import akka.kafka.stream;
  * Message type used for chunking response Source. Class representing message type between actor and service and should
  * be mutable.
  */
-public static final class ChunkSourceMessage {
+public static final class ChunkSourceMessage {    
         
-        
-    public static final Set<> = new ConcurrentHashSet<>();
+    public static final Set<> = new ConcurrentLinkedSet<>();
     public static final List<> = new ConcurrentHashList<>();
     public static final Queue<> = new LinkedDelayQueue<>();
     public static final Publisher() pubSubstarterFarm = new Publisher(farm);
