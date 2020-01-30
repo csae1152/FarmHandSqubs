@@ -1,4 +1,4 @@
 /**
   * Created by Helmut on 13.01.2018.
   */
-case class PrintMessage(input: String)
+case class PrintMessageOveride(input: String)
