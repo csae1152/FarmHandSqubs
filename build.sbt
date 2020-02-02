@@ -1,4 +1,4 @@
-import de.johoop.jacoco4sbt.
+import at.johoop.jacoco4sbt.
 
 import scala.collection.JavaConverters._
 
