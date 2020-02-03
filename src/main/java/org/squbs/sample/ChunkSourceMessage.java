@@ -15,7 +15,7 @@ public static final class ChunkSourceMessage {
     public static final Queue<> = new LinkedDelayQueue<>();
     public static final Publisher() pubSubstarterFarm = new Publisher(farm);
     
-    public ChunkSourceMessage(Source<Ping>, Response) {
+    public ChunkSourceMessage(Source<Pong>, Response) {
         this.source = responseSourceFarm;
     }    
 }
