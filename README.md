@@ -14,6 +14,6 @@ Getting Started with Squbs
 
 6. Enter the following command into the console URL: http://localhost:8080/farm
 
-7. run docker to create an iso.
+7. run docker to create an iso image.
 
 8. docker run -p 9000:8000 <farmhands>` to run as a docker image.
