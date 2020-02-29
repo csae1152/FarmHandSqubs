@@ -1,5 +1,5 @@
 Lets start with squbs
---------------------------
+---------------------
 
 1. Running the following standalone sbt comand in the console window to enter the interactive mode.
 
