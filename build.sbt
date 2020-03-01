@@ -2,7 +2,7 @@ import at.johoop.jacoco4sbt.
 
 import scala.collection.JavaConverters._
 
-name := "farm"
+name := "farmdiagnostics"
 
 version := "0.1.0-SNAPSHOT"
 
