@@ -5,7 +5,7 @@ Lets start with squbs
 
 2. Start the glassfish server at local port using the start comand.
 
-3. Run the jacoco by jacoco:cover within Java, but with quirk.
+3. Run the jacoco by jacoco:cover with Java, but with quirk.
 
 5. Open the following URL in your browser
    * http://localhost:8000/farm: Simple farm response
