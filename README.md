@@ -16,4 +16,4 @@ Lets start with squbs
 
 7. run docker to create an iso image.
 
-8. docker run -p 9000:8000 <farmhands>` to run as a docker image.
+8. docker compose -p 9000:8000 <farmhands>` to run as a docker image.
