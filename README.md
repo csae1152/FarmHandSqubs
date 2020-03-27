@@ -1,7 +1,7 @@
 Lets start with squbs
 ---------------------
 
-1. Running the following standalone sbt comand in the console window to enter the mode.
+1. Running one of the following standalone sbt comand in the console window to enter the mode.
 
 2. Start the glassfish server at local port using the start comand.
 
