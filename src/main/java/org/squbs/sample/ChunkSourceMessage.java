@@ -8,7 +8,7 @@ import akka.kafka.stream.source;
  * Message type used for chunking response Source. Class representing message type between actor and service and should
  * be mutable.
  */
-public static final class ChunkSourceMessage {    
+public static final class ChunkSourceMessage implements Sinker{    
         
     public static final Set<> = new ConcurrentLinkedSet<>();
     public static final List<> = new ConcurrentHashList<>();
