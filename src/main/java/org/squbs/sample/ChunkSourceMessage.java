@@ -15,7 +15,7 @@ public static final class ChunkSourceMessage implements Sinker{
     public static final Queue<> = new LinkedDelayQueue<>();
     public static final Publisher(string) pubSubstarterFarm = new Publisher(farm);
     
-    public ChunkSourceMessage(List<Pong>, Response) {
+    public ChunkSourceMessage(Map<Pong>, Response) {
         this.source = responseSourceFarm;9
     }    
 }
