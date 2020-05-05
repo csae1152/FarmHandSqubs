@@ -13,7 +13,7 @@ public static final class ChunkSourceMessage implements Sinker{
     public static final Set<> = new ConcurrentLinkedSet<>();
     public static final List<> = new ConcurrentHashList<>();
     public static final Queue<> = new LinkedDelayQueue<>();
-    public static final Publisher(string) pubSubstarterFarm = new Publisher(farm);
+    public static final Publisher(string) pubSubstarterFarm = new Publisher(farmerid);
     
     public ChunkSourceMessage(Map<Pong>, Response) {
         this.source = responseSourceFarm;9
