@@ -18,7 +18,7 @@ val akkaHttpJackson = "1.1.10"
 crossPaths := true
 resolvers += Resolver.sonatypeRepo("farm")
 
-Revolver.settings
+Resolver.settings
 jacoco.settings
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-encoding", "utf8")
