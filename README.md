@@ -14,6 +14,6 @@ Lets start with squbs
 
 6. Enter the following command into the console URL: http://localhost:8000/farm
 
-7. run docker to create an image.
+7. Run docker to create an image.
 
 8. docker compose -p 9000:8000 <farmhands>` to run as a docker image.
