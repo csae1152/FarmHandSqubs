@@ -14,6 +14,6 @@ Lets start with squbs
 
 6. Enter the following command into the console URL: http://localhost:8000/farming
 
-7. Run docker to create an image.
+7. Run docker on your local machine to create an image.
 
 8. Docker compose -p 9000:8000 <farmdiagnoser>` to run as a docker image.
