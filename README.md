@@ -16,4 +16,4 @@ Lets start with squbs
 
 7. Run docker on your local machine to create an image.
 
-8. Docker compose -p 9000:8000 <farmdiagnoser>` to run as a docker image.
+8. Start docker compose -p 9000:8000 <farmdiagnoser>` to run as a docker image.
