@@ -6,7 +6,7 @@ import akka.kafka.stream.source;
 
 /**
  * Message type used for chunking response Source. Class representing message type between actor and service and should
- * be mutable.
+ * be mutable for all shown classes.
  */
 public static final class ChunkSourceMessage implements SinkerListenerQueue {    
         
