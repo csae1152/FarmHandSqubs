@@ -12,7 +12,7 @@ Lets start with squbs
    * http://localhost:8000/farm/{get}: Hello response farm name and return Json response
    * http://localhost:8000/farm/{farmer}/{here}: Sends chunked response in intervals with delay in    seconds
 
-6. Enter the following command into the console URL: http://localhost:8000/farming
+6. Enter the following command into the console URL: http://localhost:8000/farm
 
 7. Run docker on your local machine to create an image.
 
