@@ -1,4 +1,4 @@
-Lets start with squbs
+Squbs
 ---------------------
 
 1. Running the following standalone scala comand in the console window to enter the mode.
