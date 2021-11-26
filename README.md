@@ -8,7 +8,7 @@ Lets start with squbs
 3. Run the jacoco by jacoco:cover with Java, but with quirk.
 
 5. Open the following URL in chrome
-   * http://localhost:8000/farm: Simple farm response
+   * http://localhost:8000/farm: Simple farm request demo.
    * http://localhost:8000/farm/{get}: Hello response farm name and return Json response
    * http://localhost:8000/farm/{farmer}/{here}: Sends chunked response in intervals with delay in    seconds
 
