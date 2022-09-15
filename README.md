@@ -17,3 +17,5 @@ Squbs
 7. Run docker image on your local machine.
 
 8. Start docker compose -p 9000:8000 <farmdiagnoser>` to run as a docker image.
+
+9. Run the application at your local port.
